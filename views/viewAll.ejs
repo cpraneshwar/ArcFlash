@@ -1,0 +1,34 @@
+<html >
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body bgcolor="lavender">
+	<center>
+	<br/><br/><br/><br/>
+		<h1>Records</h1>
+		<br/><br/>
+		<table border="2">
+			<tr id="a"><td>DEPARTMENT</td><td>ROOM</td><td>EQUIPMENT-ID</td><td>TYPE</td><td>Da</td><td>Ta</td><td>F</td><td>EMA</td>
+			</tr>
+             <% for(var i=0; i<result.length; i++) {%>
+            <tr>
+                <td><%= result[i].Department %></td>
+                <td><%= result[i].Room %></td>
+                <td><%= result[i].EquipmentID %></td>
+                <td><%= result[i].Type %></td>
+                <td><%= result[i].ta %></td>
+                <td><%= result[i].da %></td>
+                <td><%= result[i].f %></td>
+                <td><%= result[i].ema %></td>
+            </tr>
+        <% } %>
+		</table>
+        <br/>
+        <form action="\"><button type="submit" class="submitButton">Go Back</button></form>
+	</center>
+    
+</body>
+
+</html>
