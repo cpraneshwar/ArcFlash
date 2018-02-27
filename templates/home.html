@@ -24,42 +24,43 @@
             <h1>Equation for Arc in Open Air</h1>
         <br/><br/>
             <form name="testForm" method="post" action="/result">
-                <table border="2">
+                <table class="form" border="2">
                     <tr>
                         <td>Department:</td>
-                        <td><input type=text name=deptName placeholder="Department Name" required/><br><br></td>
+                        <td><input type=text name=deptName placeholder="Department Name" /><br><br></td>
                     </tr>
                     <tr>
                         <td>Room</td>
-                        <td><input type=text name=roomNo placeholder="Room No" required/><br><br></td>
+                        <td><input type=text name=roomNo placeholder="Room No" /><br><br></td>
                     </tr>
                     <tr>
                         <td>Equipment ID</td>
-                        <td><input type=text name=equipId placeholder="Equipment ID" required/><br><br></td>
+                        <td><input type=text name=equipId placeholder="Equipment ID" /><br><br></td>
                     </tr>
                     <tr>
                         <td rowspan=4>Equipment Type</td>
-                        <td><input type="radio" name="equipType" value="FS" placeholder="Select Type" checked/>Fuse Switch</td>
-                        <tr><td><input type="radio" name="equipType" value="SF" placeholder="Select Type" />Switch Fuse</td></tr>
-                        <tr><td><input type="radio" name="equipType" value="MCCB" placeholder="Select Type"/>MCCB</td></tr>
-                        <tr><td><input type="radio" name="equipType" value="ACB" placeholder="Select Type"/>ACB</td></tr>
+                        <td><input type="radio" name="equipType" value="FS" placeholder="Select Type" checked/>&nbsp;Fuse Switch</td>
+                        <tr><td><input type="radio" name="equipType" value="SF" placeholder="Select Type" />&nbsp;Switch Fuse</td></tr>
+                        <tr><td><input type="radio" name="equipType" value="MCCB" placeholder="Select Type"/>&nbsp;MCCB</td></tr>
+                        <tr><td><input type="radio" name="equipType" value="ACB" placeholder="Select Type"/>&nbsp;ACB</td></tr>
                     <tr>
                         <td>DA(Distance from arc Electrodes):</td>
-                        <td><input type=text name=da placeholder="in Inches" required/><br><br></td>
+                        <td><input type=text name=da placeholder="in Inches"/><br><br></td>
                     </tr>
                     <tr>
                         <td>tA(Arc Duration):</td>
-                        <td><input type=text name=ta placeholder="in Seconds" required/><br><br></td>
+                        <td><input type=text name=ta placeholder="in Seconds"/><br><br></td>
                     </tr>
                     <tr>
                         <td>F(Bolted Fault Short Circuit Current):</td>
-                        <td><input type=text name=f placeholder="in kA" required/><br><br></td>
+                        <td><input type=text name=f placeholder="in kA"/><br><br></td>
                     </tr>
                 </table><br/>
-                <button type="submit" class="submitButton">Calculate</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="submit" class="submitButton">Calculate</button>
+            </form>
+            <form>
                 <button type="submit" class="submitButton" formmethod="get" formaction="/viewAll">View Records</button>
-            </form>   
-            
+            </form>
             <br/><br/><br/>
             <result id="result"></result>
     </body>

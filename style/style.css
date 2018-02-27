@@ -1,10 +1,15 @@
 .submitButton {
-    width:100px;
-    height:35px;
+    width:150px;
+    height:50px;
+    font-size:1em;
+    font-family: "Avenir Next";
+    font-weight: 410;
     background-color:cornflowerblue;
     border:none;
-    border-radius:10px;
+    border-radius:12px;
     transition:0.5s;
+    
+    
 }
 .submitButton:hover
 {
@@ -12,17 +17,71 @@
     color:white;
 }
 
-body
-{
-	background-color: Lavender;
-}
-result{
-    width:300px;
-    height:200px;
-    background-color: aqua;
+@font-face {
+font-family: "Avenir Next";
+src: url("Avenir Next.ttc");
 }
 
+body
+{
+    font-family: "Avenir Next";
+	background-image: url("background.jpg");
+    background-size: cover;
+    overflow:auto;
+}
 h1
 {
-	color:Red;
+	color:cornsilk;
+    font-size: 3em;
+    font-family:"Avenir Next";
+    font-weight:lighter;
+}
+table{
+        font-weight:410;
+        border:none;
+}
+td,tr,th{
+    border:none;
+    text-align: center;
+    width:8%;
+}
+
+table.form{
+    width:60%;
+    border-radius: 20px;
+    text-align: center;
+    background: rgba(220,220,220,0.4); 
+}
+table.form td{
+    padding:0.5%;
+    align-items: center;
+    font-size: 1.2em;
+}
+input[type="text"] {
+    text-align: center;
+    color:whitesmoke;
+    font-family: "Avenir Next";
+    font-weight: 410;
+    font-size:0.8em;
+    width:50%;
+    height: 30px;
+    background: rgba(30,30,30,0.5);
+    border:none;
+    border-radius:3px;
+}
+table.result {
+    border:none;
+}
+table.result td {
+    border-radius: 2px;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    background: rgba(230,230,230,0.3); 
+}
+table.result th{
+    background: rgba(30,30,30,0.7); 
+    border-radius: 2px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color:antiquewhite;
 }

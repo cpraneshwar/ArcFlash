@@ -9,8 +9,8 @@
 	<br/><br/><br/><br/>
 		<h1>Records</h1>
 		<br/><br/>
-		<table border="2">
-			<tr id="a"><td>DEPARTMENT</td><td>ROOM</td><td>EQUIPMENT-ID</td><td>TYPE</td><td>Da</td><td>Ta</td><td>F</td><td>EMA</td>
+		<table class="result" border="2">
+			<tr id="a"><th>DEPARTMENT</th><th>ROOM</th><th>EQUIPMENT-ID</th><th>TYPE</th><th>Da</th><th>Ta</th><th>F</th><th>EMA</th>
 			</tr>
              <% for(var i=0; i<result.length; i++) {%>
             <tr>
@@ -18,8 +18,8 @@
                 <td><%= result[i].Room %></td>
                 <td><%= result[i].EquipmentID %></td>
                 <td><%= result[i].Type %></td>
-                <td><%= result[i].ta %></td>
                 <td><%= result[i].da %></td>
+                <td><%= result[i].ta %></td>
                 <td><%= result[i].f %></td>
                 <td><%= result[i].ema %></td>
             </tr>
